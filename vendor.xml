@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <project path="vendor/lge" name="LuckyAOSP/proprietary_vendor_lge" remote="lucky" groups="vendor,lge" />
+
+</manifest>

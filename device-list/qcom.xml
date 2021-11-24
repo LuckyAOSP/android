@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- common AOSP parts -->
+  <!--remove-project name="platform/hardware/qcom/audio" />
+  <remove-project name="platform/hardware/qcom/bt" /-->
+  <remove-project name="platform/hardware/qcom/display" />
+  <!--remove-project name="platform/hardware/qcom/gps" />
+  <remove-project name="platform/hardware/qcom/keymaster" />
+  <remove-project name="platform/hardware/qcom/media" />
+  <remove-project name="platform/hardware/qcom/msm8960" />
+  <remove-project name="platform/hardware/qcom/power" />
+  <remove-project name="platform/hardware/qcom/wlan" / -->
+
+  <!--project path="hardware/qcom/wlan" name="LuckyAOSP/android_hardware_qcom_wlan" remote="lucky" groups="pdk,qcom_wlan" />
+  <project path="hardware/qcom/audio" name="LuckyAOSP/android_hardware_qcom_audio" remote="lucky" groups="qcom,qcom_audio" />
+  <project path="hardware/qcom/bt" name="LuckyAOSP/android_hardware_qcom_bt" remote="lucky" groups="qcom" /-->
+  <project path="hardware/qcom/display" name="LuckyAOSP/android_hardware_qcom_display" remote="lucky" groups="pdk,qcom,qcom_display" />
+  <!--project path="hardware/qcom/gps" name="LuckyAOSP/android_hardware_qcom_gps" remote="lucky" groups="qcom,qcom_gps" />
+  <project path="hardware/qcom/keymaster" name="LuckyAOSP/android_hardware_qcom_keymaster" remote="lucky" groups="qcom,qcom_keymaster" />
+  <project path="hardware/qcom/media" name="LuckyAOSP/android_hardware_qcom_media" remote="lucky" groups="qcom" />
+  <project path="hardware/qcom/power" name="LuckyAOSP/android_hardware_qcom_power" remote="lucky" groups="qcom,pdk" /-->
+
+  <!-- hammerhead -->
+  <project path="kernel/lge/hammerhead" name="LuckyAOSP/android_kernel_lge_hammerhead" remote="lucky" revision="stable" groups="qcom,kernel,lge,hammerhead" />
+  <project path="device/lge/hammerhead" name="LuckyAOSP/android_device_lge_hammerhead" remote="lucky" groups="qcom,device,lge,hammerhead" />
+
+</manifest>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Remotes -->
+  <remote  name="lucky"
+           fetch="https://github.com/"
+           revision="aosp-11" />
+
+  <!-- Includes -->
+  <include name="aosp.xml" />
+  <include name="lucky.xml" />
+  <include name="vendor.xml" />
+
+  <!-- Include Devices -->
+  <include name="device-list/qcom.xml" />
+
+</manifest>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- lucky Android manifest project -->
+  <project path="android" name="LuckyAOSP/android" remote="lucky" />
+
+  <!-- lucky Android vendor project  -->
+  <project path="vendor/lucky" name="LuckyAOSP/android_vendor_lucky" remote="lucky" />
+
+  <!-- Replace build project to build kernel inline from the source -->
+  <remove-project name="platform/build" />
+  <project path="build/make" name="LuckyAOSP/android_build" remote="lucky" groups="pdk" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+
+  <remove-project name="platform/build/soong" />
+  <project path="build/soong" name="LuckyAOSP/android_build_soong" remote="lucky" groups="pdk,tradefed" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <remove-project name="platform/bionic" />
+  <project path="bionic" name="LuckyAOSP/android_bionic" remote="lucky" groups="pdk" />
+  <remove-project name="platform/hardware/ril" />
+  <project path="hardware/ril" name="LuckyAOSP/android_hardware_ril" remote="lucky" groups="pdk" />
+  <remove-project name="platform/system/bt" />
+  <project path="system/bt" name="LuckyAOSP/android_system_bt" remote="lucky" groups="pdk" />
+  <remove-project name="platform/system/sepolicy" />
+  <project path="system/sepolicy" name="LuckyAOSP/android_system_sepolicy" remote="lucky" groups="pdk" />
+  <remove-project name="platform/system/core" />
+  <project path="system/core" name="LuckyAOSP/android_system_core" remote="lucky" groups="pdk" />
+
+  <!-- Debloat -->
+  <remove-project name="device/asus/fugu" />
+  <remove-project name="device/asus/fugu-kernel" />
+  <remove-project name="device/google/dragon" />
+  <remove-project name="device/google/dragon-kernel" />
+  <remove-project name="device/google/marlin" />
+  <remove-project name="device/google/marlin-kernel" />
+  <remove-project name="device/huawei/angler" />
+  <remove-project name="device/huawei/angler-kernel" />
+  <remove-project name="device/lge/bullhead" />
+  <remove-project name="device/lge/bullhead-kernel" />
+  <remove-project path="device/google/cuttlefish" />
+  <remove-project path="device/google/cuttlefish_kernel" />
+  <remove-project name="device/linaro/hikey" />
+  <remove-project name="device/linaro/hikey-kernel" />
+  <remove-project name="platform/packages/apps/Browser2" />
+  <remove-project name="platform/packages/apps/Music" />
+  <remove-project name="platform/packages/apps/QuickSearchBox" />
+
+</manifest>
