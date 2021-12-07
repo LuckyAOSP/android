@@ -6,14 +6,14 @@
           revision="aosp-11" />
 
   <!-- lucky Android manifest project -->
-  <project path="android" name="LuckyAOSP/android" remote="lucky" />
+  <project path="android" name="android" remote="lucky" />
 
   <!-- lucky Android vendor project  -->
-  <project path="vendor/lucky" name="LuckyAOSP/android_vendor_lucky" remote="lucky" />
-  <project path="vendor/lge" name="LuckyAOSP/proprietary_vendor_lge" remote="lucky" groups="vendor,lge" />
+  <project path="vendor/lucky" name="android_vendor_lucky" remote="lucky" />
+  <project path="vendor/lge" name="proprietary_vendor_lge" remote="lucky" groups="vendor,lge" />
 
   <!-- Replace build project to build kernel inline from the source -->
-  <project path="build/make" name="LuckyAOSP/android_build" remote="lucky" groups="pdk" >
+  <project path="build/make" name="android_build" remote="lucky" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -23,20 +23,20 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
 
-  <project path="build/soong" name="LuckyAOSP/android_build_soong" remote="lucky" groups="pdk,tradefed" >
+  <project path="build/soong" name="android_build_soong" remote="lucky" groups="pdk,tradefed" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
-  <project path="bionic" name="LuckyAOSP/android_bionic" remote="lucky" groups="pdk" />
-  <project path="hardware/ril" name="LuckyAOSP/android_hardware_ril" remote="lucky" groups="pdk" />
-  <project path="system/bt" name="LuckyAOSP/android_system_bt" remote="lucky" groups="pdk" />
-  <project path="system/sepolicy" name="LuckyAOSP/android_system_sepolicy" remote="lucky" groups="pdk" />
-  <project path="system/core" name="LuckyAOSP/android_system_core" remote="lucky" groups="pdk" />
+  <project path="bionic" name="android_bionic" remote="lucky" groups="pdk" />
+  <project path="hardware/ril" name="android_hardware_ril" remote="lucky" groups="pdk" />
+  <project path="system/bt" name="android_system_bt" remote="lucky" groups="pdk" />
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="lucky" groups="pdk" />
+  <project path="system/core" name="android_system_core" remote="lucky" groups="pdk" />
 
 
 <!-- Device -->
-  <project path="device/lge/hammerhead" name="LuckyAOSP/android_device_lge_hammerhead" remote="lucky" groups="qcom,device,lge,hammerhead" />
+  <project path="device/lge/hammerhead" name="android_device_lge_hammerhead" remote="lucky" groups="qcom,device,lge,hammerhead" />
 
 
 </manifest>
