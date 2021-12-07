@@ -9,7 +9,7 @@ familiar with [Git and Repo](http://source.android.com/source/using-repo.html).
 
 To initialize your local repository using theese trees, use a command like this:
 
-    repo init -u git://github.com/LuckyAOSP/android.git -b aosp-11
+    repo init -u https://github.com/LuckyAOSP/android.git -b aosp-11
 
 Then to sync up:
 
