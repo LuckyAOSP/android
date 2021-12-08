@@ -36,6 +36,7 @@
   <remove-project name="device/google/cuttlefish_kernel" />
   <remove-project name="device/google/cuttlefish_vmm" />
   <remove-project name="device/google/fuchsia" />
+  <remove-project name="device/google/muskie" />
   <remove-project name="device/google/trout" />
   <remove-project name="device/google/sunfish" />
   <remove-project name="device/google/sunfish-kernel" />
@@ -66,10 +67,21 @@
 
  <!-- Externel repos -->
   <remove-project name="platform/external/auto" />
+  <remove-project name="platform/external/escapevelocity" />
+  <remove-project name="platform/external/google-java-format" />
+  <remove-project name="platform/external/marisa-trie" />
+  <remove-project name="platform/external/tflite-support" />
+  <remove-project name="platform/external/zstd" />
 
   <!-- Hardware repos -->
   <remove-project name="platform/hardware/qcom/display" />
+  <remove-project name="platform/hardware/qcom/msm8998" />
   <remove-project name="platform/hardware/ril" />
+  <remove-project name="platform/hardware/qcom/neuralnetworks/hvxservice" />
+
+  <!-- Packages repos -->
+  <remove-project name="platform/packages/apps/Car/CompanionDeviceSupport" />
+  <remove-project name="platform/packages/modules/Connectivity" />
 
   <!-- System repos -->
   <remove-project name="platform/system/bt" />
