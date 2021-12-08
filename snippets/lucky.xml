@@ -34,12 +34,11 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-
   <project path="build/soong" name="android_build_soong" remote="lucky" groups="pdk,tradefed" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-
+  <project path="build/blueprint" name="build_blueprint" remote="lucky" />
   <project path="bionic" name="android_bionic" remote="lucky" groups="pdk" />
   <project path="hardware/ril" name="android_hardware_ril" remote="lucky" groups="pdk" />
   <project path="system/bt" name="android_system_bt" remote="lucky" groups="pdk" />
