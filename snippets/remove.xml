@@ -93,6 +93,7 @@
 
   <!-- Tools repos -->
   <remove-project name="platform/tools/tradefederation/prebuilts" />
+  <remove-project name="platform/tools/test/graphicsbenchmark" />
 
   <!-- System repos -->
   <remove-project name="platform/system/bt" />
