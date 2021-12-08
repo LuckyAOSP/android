@@ -42,6 +42,9 @@
   <remove-project name="device/google/sunfish-sepolicy" />
   <remove-project name="device/google/vrservices" />
   <remove-project name="device/google_car" />
+  <remove-project name="device/google/taimen" />
+  <remove-project name="device/google/wahoo" />
+  <remove-project name="device/google/wahoo-kernel" />
   <remove-project name="device/linaro/bootloader/arm-trusted-firmware" />
   <remove-project name="device/linaro/bootloader/edk2" />
   <remove-project name="device/linaro/bootloader/OpenPlatformPkg" />
@@ -60,6 +63,9 @@
   <remove-project name="platform/bionic" />
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
+
+ <!-- Externel repos -->
+  <remove-project name="platform/external/auto" />
 
   <!-- Hardware repos -->
   <remove-project name="platform/hardware/qcom/display" />
