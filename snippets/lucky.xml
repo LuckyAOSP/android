@@ -11,6 +11,8 @@
   <!-- lucky Android vendor project  -->
   <project path="vendor/lucky" name="android_vendor_lucky" remote="lucky" />
   <project path="vendor/lge" name="proprietary_vendor_lge" remote="lucky" groups="vendor,lge" />
+  <project path="vendor/xiaomi/olives" name="proprietary_vendor_xiaomi_olives" remote="lucky" groups="vendor,xiaomi,olives" />
+  <project path="vendor/xiaomi/sdm439-common" name="proprietary_vendor_xiaomi_sdm439-common" remote="lucky" groups="vendor,xiaomi,sdm439-common" />
 
   <!-- Replace build project to build kernel inline from the source -->
   <project path="build/make" name="android_build" remote="lucky" groups="pdk" >
@@ -37,6 +39,8 @@
 
 <!-- Device -->
   <project path="device/lge/hammerhead" name="android_device_lge_hammerhead" remote="lucky" groups="qcom,device,lge,hammerhead" />
+  <project path="device/xiaomi/olives" name="android_device_xiaomi_olives" remote="lucky" groups="qcom,device,xiaomi,olives" />
+  <project path="device/xiaomi/sdm439-common" name="android_device_xiaomi_sdm439-common" remote="lucky" groups="qcom,device,xiaomi,sdm439-common" />
 
 
 </manifest>
