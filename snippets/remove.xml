@@ -64,6 +64,7 @@
   <remove-project name="platform/bionic" />
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
+  <remove-project name="platform/build/blueprint" />
 
   <!-- Frameworks repos -->
   <remove-project name="platform/frameworks/proto_logging" />
