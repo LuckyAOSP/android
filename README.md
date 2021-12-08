@@ -1,5 +1,4 @@
-# LuckyOS is an
-# Android Open Source Project
+# LuckyOS is an Android Open Source Project
 
 Getting Started
 ---------------
@@ -13,5 +12,5 @@ To initialize your local repository using theese trees, use a command like this:
 
 Then to sync up:
 
-    repo sync
+    repo sync -c -j$(nproc --all)
 
