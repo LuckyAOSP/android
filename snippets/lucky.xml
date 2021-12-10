@@ -54,6 +54,10 @@
   <!-- Kernel -->
   <project path="kernel/xiaomi/sdm439" name="android_kernel_xiaomi_sdm439" remote="lucky" groups="qcom,kernel,xiaomi,sdm439" />
 
+  <!-- Tools repos -->
+  <project path="tools/test/graphicsbenchmark" name="android_tools_test_graphicsbenchmark" remote="lucky" />
+  <project path="tools/tradefederation/prebuilts" name="android_tools_tradefederation_prebuilts" remote="lucky" />
+
 
   <!-- lucky Android vendor project  -->
   <project path="vendor/lucky" name="android_vendor_lucky" remote="lucky" />
